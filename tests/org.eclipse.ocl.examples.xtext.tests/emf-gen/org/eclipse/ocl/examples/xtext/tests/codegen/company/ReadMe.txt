@@ -1,0 +1,1 @@
+These files are auto-generated _OCL_UsageTests__testCodegenCompany/test-src/codegen/company and then copied to here manually.

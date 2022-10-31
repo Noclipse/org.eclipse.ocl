@@ -1,0 +1,4 @@
+
+h3(#ModelRegistry). Model Registry
+
+The Model Registry is now deprecated.

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.eclipse.org/ocl/test/2010/Company.ecore"
+            class="company.CompanyPackage"
+            genModel="model/Company.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated extlibrary -->
+      <package
+            uri="http:///org/eclipse/ocl/examples/tests/extlibrary.ecore/1.0.0"
+            class="org.eclipse.ocl.ecore.tests.extlibrary.EXTLibraryPackage"
+            genModel="model/extlibrary.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.content_parser">
+      <!-- @generated extlibrary -->
+      <parser
+            contentTypeIdentifier="org.eclipse.ocl.ecore.tests.extendedLibrary"
+            class="org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.core.contenttype.contentTypes">
+      <!-- @generated extlibrary -->
+      <content-type
+            base-type="org.eclipse.emf.ecore.xmi"
+            file-extensions="extlibrary"
+            id="org.eclipse.ocl.ecore.tests.extendedLibrary"
+            name="%_UI_EXTLibrary_content_type"
+            priority="normal">
+         <describer class="org.eclipse.emf.ecore.xmi.impl.RootXMLContentHandlerImpl$Describer">
+            <parameter name="namespace" value="http:///org/eclipse/ocl/examples/tests/extlibrary.ecore/1.0.0"/>
+            <parameter name="kind" value="xmi"/>
+         </describer>
+      </content-type>
+   </extension>
+
+</plugin>

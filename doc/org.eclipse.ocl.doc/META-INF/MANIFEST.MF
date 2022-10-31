@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.ocl.doc;singleton:=true
+Bundle-Version: 3.18.0.qualifier
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.help;bundle-version="[3.4.0,4.0.0)"
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: org.eclipse.ocl.doc
